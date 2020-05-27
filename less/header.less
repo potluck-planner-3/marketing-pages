@@ -1,0 +1,60 @@
+#header{
+    margin-bottom: 3%;
+    padding: 2% 0;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+
+        nav{
+            width: 350px;
+            display: flex;
+            justify-content: center;
+
+            a{
+                margin: 0 2%;
+            }//end a
+        }//end nav
+    }//end header
+
+    section{
+        background: url(/design/picnic3.jpg) no-repeat center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        p{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        h2, p{
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            color: @darkentang;
+            .transparent ();
+            padding: 1% 0;
+        }//end h2 & p
+
+        .headline{
+            border-radius: 15px;
+            width: 200px;
+            padding: 2% 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: @darkentang;
+        }//end a
+    }//end section
+}//end #header
