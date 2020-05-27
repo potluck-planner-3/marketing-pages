@@ -127,7 +127,7 @@ table {
 html {
   background-color: #DBD8B3;
 }
-.container {
+#container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -137,18 +137,18 @@ html {
 h1 {
   font-size: 3rem;
 }
-.header {
+#header {
   border: 1px solid blue;
   margin-bottom: 3%;
   padding: 2% 0;
 }
-.header header {
+#header header {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2%;
 }
-.header header nav {
+#header header nav {
   margin: 0 2%;
 }
