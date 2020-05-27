@@ -135,10 +135,22 @@ html {
   margin-top: 2%;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 #header {
-  border: 1px solid blue;
   margin-bottom: 3%;
   padding: 2% 0;
 }
@@ -150,5 +162,43 @@ h1 {
   margin-bottom: 2%;
 }
 #header header nav {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+#header header nav a {
   margin: 0 2%;
+}
+#header section {
+  background: url(/design/picnic3.jpg) no-repeat center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header section h2 {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#header section p {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#header section h2,
+#header section p {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  color: #c6461b;
+  background: rgba(252, 200, 178, 0.7);
+  padding: 1% 0;
+}
+#header section .headline {
+  border-radius: 15px;
+  width: 200px;
+  padding: 2% 0;
+}
+#header section a {
+  text-decoration: none;
+  color: #c6461b;
 }
