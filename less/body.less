@@ -8,12 +8,13 @@
     margin: auto;
 
     .one{
-        display: flex;
+        .sidebyside();
+        margin-top: 7%;
     }
 
     .two{
-        display: flex;
-        flex-direction: row-reverse;
+        .sidebyside(row-reverse);
+        margin-bottom: 7%;
     }
 
     p{
@@ -24,5 +25,29 @@
 
     img{
         width: 40%;
+    }
+}
+
+#main{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    img{
+        width: 25%;
+    }
+
+    p{
+        font-size: 1.4rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .elijah, .raneem, .shanon{
+        .sidebyside();
+    }
+
+    .robert, .anthony{
+        .sidebyside(row-reverse);
     }
 }
