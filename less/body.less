@@ -39,9 +39,15 @@
 
 //about page
 #main{
-    width: 80%;
-    margin: auto;
     text-align: center;
+    padding: 5% 0;
+    border-bottom: 2px dashed @eggplant;
+
+    section{
+        width: 80%;
+        margin: auto;
+        padding: 2% 0;
+    }
 
     img{
         width: 25%;
@@ -60,4 +66,30 @@
     .robert, .anthony{
         .sidebyside(row-reverse);
     }
+
+    .elijah, .robert, .raneem, .anthony{
+        border-bottom: 2px dashed @eggplant;
+    }
 }//end #main
+
+//contact page
+#form{
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//index event
+#event{
+    .sidebyside(column);
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    border-top: 2px dashed @eggplant;
+    border-bottom: 2px dashed @eggplant;
+
+    h2{
+        padding: 5% 0;
+    }
+}

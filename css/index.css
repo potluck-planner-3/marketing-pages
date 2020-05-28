@@ -155,7 +155,8 @@ h6 {
   font-weight: bold;
 }
 #header {
-  margin-bottom: 3%;
+  padding-bottom: 3%;
+  border-bottom: 2px dashed #685369;
 }
 #header header {
   display: flex;
@@ -242,9 +243,14 @@ h6 {
   width: 40%;
 }
 #main {
+  text-align: center;
+  padding: 5% 0;
+  border-bottom: 2px dashed #685369;
+}
+#main section {
   width: 80%;
   margin: auto;
-  text-align: center;
+  padding: 2% 0;
 }
 #main img {
   width: 25%;
@@ -266,6 +272,29 @@ h6 {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+#main .elijah,
+#main .robert,
+#main .raneem,
+#main .anthony {
+  border-bottom: 2px dashed #685369;
+}
+#form form {
+  display: flex;
+  flex-direction: column;
+}
+#event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin-top: 5%;
+  border-top: 2px dashed #685369;
+  border-bottom: 2px dashed #685369;
+}
+#event h2 {
+  padding: 5% 0;
 }
 footer {
   margin-top: 10%;
