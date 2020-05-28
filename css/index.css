@@ -134,10 +134,12 @@ html {
   margin: 0 auto;
   background-color: white;
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 h1 {
   font-size: 3.4rem;
   font-family: 'Righteous', cursive;
+  color: #3e313e;
 }
 h2 {
   font-size: 2rem;
@@ -154,14 +156,16 @@ h6 {
 }
 #header {
   margin-bottom: 3%;
-  padding: 2% 0;
 }
 #header header {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  padding: 2% 0;
   margin-bottom: 2%;
+  background-color: #7ca04e;
+  color: #cbc690;
 }
 #header header nav {
   width: 350px;
@@ -217,11 +221,17 @@ h6 {
   align-items: center;
   margin-top: 7%;
 }
+#slogan .one p {
+  padding-right: 2%;
+}
 #slogan .two {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   margin-bottom: 7%;
+}
+#slogan .two p {
+  padding-left: 2%;
 }
 #slogan p {
   font-family: 'Indie Flower', cursive;
@@ -256,4 +266,24 @@ h6 {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+footer {
+  margin-top: 10%;
+  background-color: #7ca04e;
+  color: #cbc690;
+  text-align: center;
+}
+footer .first {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer #nav a {
+  padding-top: 6%;
 }
