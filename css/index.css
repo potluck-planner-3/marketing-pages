@@ -204,18 +204,25 @@ h6 {
 #header section a {
   color: #c6461b;
 }
-#one {
+#slogan {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: auto;
 }
-#one h2 {
-  margin: 5% 0;
+#slogan .one {
+  display: flex;
 }
-#one p {
-  margin-bottom: 5%;
+#slogan .two {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#slogan p {
   font-family: 'Indie Flower', cursive;
-  line-height: 2.5;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+#slogan img {
+  width: 40%;
 }
