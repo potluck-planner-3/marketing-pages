@@ -36,12 +36,28 @@
     }//end img
 }//end #slogan
 
+//event index page
+#event{
+    .sidebyside(column);
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    .pagebreaktop();
+    .pagebreak();
+
+    h2{
+        padding: 5% 0;
+        font-family: 'Concert One', cursive;
+    }//end h2
+}//end #event
+
 
 //about page
 #main{
     text-align: center;
     padding: 5% 0;
-    border-bottom: 2px dashed @eggplant;
+    .pagebreak();
+    font-family: 'Concert One', cursive;
 
     section{
         width: 80%;
@@ -53,10 +69,21 @@
         width: 25%;
     }//end img
 
+    h2{
+        padding-bottom: 5%;
+    }//end h2
+
+    h4{
+        padding-top: 2%;
+    }//end h4
+
     p{
-        font-size: 1.4rem;
+        font-family: 'Indie Flower', cursive;
+        line-height: 1.5;
+        font-size: 1.5rem;
         width: 80%;
         margin: auto;
+        padding-top: 2%;
     }//end p
 
     .elijah, .raneem, .shanon{
@@ -68,7 +95,11 @@
     }
 
     .elijah, .robert, .raneem, .anthony{
-        border-bottom: 2px dashed @eggplant;
+        .pagebreak();
+    }
+
+    .elijah{
+        .pagebreaktop();
     }
 }//end #main
 
@@ -80,16 +111,32 @@
     }
 }
 
-//index event
-#event{
+button, input[type=submit]{
+    width: 100px;
+    background-color: @eggplant;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}//end button
+
+
+//contact page
+#contact{
     .sidebyside(column);
     padding-top: 5%;
-    padding-bottom: 10%;
-    margin-top: 5%;
-    border-top: 2px dashed @eggplant;
-    border-bottom: 2px dashed @eggplant;
+    padding-bottom: 8%;
+    .pagebreak();
 
-    h2{
-        padding: 5% 0;
-    }
-}
+    section{
+        width: 80%;
+        margin-top: 5%; 
+        .sidebyside();
+        justify-content: space-between;
+        align-items: flex-start;
+
+        div{
+            text-align: center;
+        }//end div
+    }//end section
+}//end #contact
