@@ -1,6 +1,8 @@
 #header{
     padding-bottom: 3%;
     .pagebreak();
+    display: flex;
+    flex-direction: column;
 
     header{
         display: flex;
@@ -8,7 +10,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 2% 0;
-        margin-bottom: 2%;
+        // margin-bottom: 2%;
         background-color: @darkteagreen;
         color: @darkspring;
 
@@ -87,6 +89,15 @@
             }//end a
         }//end nav
     }//end header
+
+    button{
+        align-self: flex-end;
+        margin: 1% 3%;
+
+        @media @tablet{
+            align-self: center;
+        }
+    }
 
     section{
         background: url(/design/picnic3.jpg) no-repeat center;
