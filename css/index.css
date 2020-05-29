@@ -351,6 +351,7 @@ h6 {
 #event h2 {
   padding: 5% 0;
   font-family: 'Concert One', cursive;
+  text-align: center;
 }
 #main {
   text-align: center;
@@ -521,6 +522,7 @@ input[type=submit] {
 #form h2 {
   padding-bottom: 3%;
   font-family: 'Concert One', cursive;
+  text-align: center;
 }
 #form section {
   width: 80%;
