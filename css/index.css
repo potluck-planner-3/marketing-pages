@@ -222,17 +222,29 @@ h6 {
 }
 @media (max-width:500px) {
   #header header nav a {
-    box-shadow: 0 0;
+    box-shadow: none;
     margin: 1% 0;
   }
 }
 #header header nav a:hover {
   background-color: #fbb699;
 }
+@media (max-width:500px) {
+  #header header nav a:hover {
+    background-color: #FCC8B2;
+  }
+}
 #header header nav a:active {
   background-color: #fbb699;
   box-shadow: 0 2px #c6461b;
   transform: translateY(3px);
+}
+@media (max-width:500px) {
+  #header header nav a:active {
+    box-shadow: none;
+    transform: none;
+    background-color: #FCC8B2;
+  }
 }
 #header section {
   background: url(/design/picnic3.jpg) no-repeat center;
