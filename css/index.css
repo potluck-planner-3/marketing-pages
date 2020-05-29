@@ -168,8 +168,44 @@ h6 {
   background-color: #7ca04e;
   color: #cbc690;
 }
+@media (max-width:850px) {
+  #header header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#header header h1 {
+  width: 45%;
+}
+@media (max-width:850px) {
+  #header header h1 {
+    text-align: center;
+  }
+}
+@media (max-width:500px) {
+  #header header h1 {
+    width: 100%;
+  }
+}
 #header header nav {
-  width: 400px;
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width:850px) {
+  #header header nav {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  #header header nav {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 #header header nav a {
   display: inline-block;
@@ -183,6 +219,12 @@ h6 {
   border-radius: 8px;
   box-shadow: 0 5px #EFA48B;
   font-family: 'Concert One', cursive;
+}
+@media (max-width:500px) {
+  #header header nav a {
+    box-shadow: 0 0;
+    margin: 1% 0;
+  }
 }
 #header header nav a:hover {
   background-color: #fbb699;
@@ -232,6 +274,11 @@ h6 {
   width: 80%;
   margin: auto;
 }
+@media (max-width:850px) {
+  #slogan {
+    width: 95%;
+  }
+}
 #slogan .one {
   display: flex;
   flex-direction: row;
@@ -255,8 +302,19 @@ h6 {
   line-height: 1.5;
   font-size: 1.4rem;
 }
+@media (max-width:500px) {
+  #slogan p {
+    font-size: 1.1rem;
+    line-height: normal;
+  }
+}
 #slogan img {
   width: 40%;
+}
+@media (max-width:500px) {
+  #slogan .phone {
+    display: none;
+  }
 }
 #event {
   display: flex;
@@ -283,8 +341,18 @@ h6 {
   margin: auto;
   padding: 2% 0;
 }
+@media (max-width:850px) {
+  #main section {
+    width: 95%;
+  }
+}
 #main img {
   width: 25%;
+}
+@media (max-width:500px) {
+  #main img {
+    width: 50%;
+  }
 }
 #main h2 {
   padding-bottom: 5%;
@@ -300,6 +368,12 @@ h6 {
   margin: auto;
   padding-top: 2%;
 }
+@media (max-width:500px) {
+  #main p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
 #main .elijah,
 #main .raneem,
 #main .shanon {
@@ -307,11 +381,28 @@ h6 {
   flex-direction: row;
   align-items: center;
 }
+@media (max-width:500px) {
+  #main .elijah,
+  #main .raneem,
+  #main .shanon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #main .robert,
 #main .anthony {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+@media (max-width:500px) {
+  #main .robert,
+  #main .anthony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #main .elijah,
 #main .robert,
@@ -321,10 +412,6 @@ h6 {
 }
 #main .elijah {
   border-top: 2px dashed #6e3e70;
-}
-#form form {
-  display: flex;
-  flex-direction: column;
 }
 button,
 input[type=submit] {
@@ -342,21 +429,115 @@ input[type=submit] {
   padding-top: 5%;
   padding-bottom: 8%;
   border-bottom: 2px dashed #6e3e70;
+  font-family: 'Concert One', cursive;
 }
 #contact section {
-  width: 80%;
+  width: 90%;
   margin-top: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 3% 1%;
+  background-color: #6e3e70;
+  color: white;
+  border-radius: 8px;
+}
+@media (max-width:850px) {
+  #contact section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+}
+#contact section i {
+  font-size: 3rem;
+}
+#contact section h4 {
+  padding: 2% 0;
+}
+#contact section p {
+  font-family: 'Indie Flower', cursive;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+@media (max-width:500px) {
+  #contact section p {
+    font-size: 1.1rem;
+    line-height: normal;
+  }
 }
 #contact section div {
   text-align: center;
 }
+#contact section .phone i {
+  padding-bottom: 5%;
+}
+#contact section .phone h4 {
+  padding-bottom: 5%;
+}
+@media (max-width:850px) {
+  #contact section .phone,
+  #contact section .email {
+    margin-top: 5%;
+  }
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+  border-bottom: 2px dashed #6e3e70;
+}
+#form form {
+  display: flex;
+  flex-direction: column;
+}
+#form h2 {
+  padding-bottom: 3%;
+  font-family: 'Concert One', cursive;
+}
+#form section {
+  width: 80%;
+  background-color: #FCC8B2;
+  padding: 2% 1%;
+  border-radius: 10px;
+}
+@media (max-width:500px) {
+  #form section {
+    width: 95%;
+  }
+}
+#form section input[type=text],
+#form section textarea {
+  width: 100%;
+  padding: 1%;
+  border-radius: 8px;
+  margin-top: 1% 0;
+  resize: vertical;
+  border: none;
+}
+#form section textarea {
+  height: 200px;
+}
+@media (max-width:500px) {
+  #form section textarea {
+    height: 100px;
+  }
+}
+#form section label {
+  margin: 1% 0;
+}
+#form section input[type=submit] {
+  margin-top: 2%;
+  margin-left: 1%;
+}
 footer {
   margin-top: 10%;
+  padding-top: 1%;
   background-color: #7ca04e;
   color: #cbc690;
   text-align: center;
