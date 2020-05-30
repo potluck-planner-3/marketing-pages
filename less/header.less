@@ -1,0 +1,141 @@
+#header{
+    padding-bottom: 3%;
+    .pagebreak();
+    display: flex;
+    flex-direction: column;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 0;
+        // margin-bottom: 2%;
+        background-color: @darkteagreen;
+        color: @darkspring;
+
+        @media @tablet{
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{
+            width: 45%;
+
+            @media @tablet{
+                text-align: center;
+            }
+
+            @media @phone{
+                width: 100%;
+            }
+        }
+
+        nav{
+            width: 55%;
+            display: flex;
+            justify-content: flex-end;
+
+            @media @tablet{
+                margin-top: 2%;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            @media @phone{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            a{
+                display: inline-block;
+                margin: 0 1% auto;
+                padding: 1% 3%;
+                background-color: @apricot;
+                border: none;
+                color: @darkentang;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 8px;
+                box-shadow: 0 5px @vividtangerine;
+                font-family: 'Concert One', cursive;
+
+                @media @phone{
+                    box-shadow: none;
+                    margin: 1% 0;
+                }
+
+                &:hover{
+                    background-color: @darkapricot;
+
+                    @media @phone{
+                        background-color: @apricot;
+                    }
+                }
+
+                &:active{
+                    background-color: @darkapricot;
+                    box-shadow: 0 2px @darkentang;
+                    transform: translateY(3px);
+
+                    @media @phone{
+                        box-shadow: none;
+                        transform: none;
+                        background-color: @apricot;
+                    }
+                }
+            }//end a
+        }//end nav
+    }//end header
+
+    button{
+        align-self: flex-end;
+        margin: 1% 3%;
+
+        @media @tablet{
+            align-self: center;
+        }
+    }
+
+    section{
+        background: url(/design/picnic3.jpg) no-repeat center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }//end h2
+
+        p{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }//end p
+
+        h2, p{
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            color: @darkentang;
+            .transparent ();
+            padding: 1% 0;
+            font-family: 'Concert One', cursive;
+        }//end h2 & p
+
+
+        //about page
+        .headline{
+            border-radius: 15px;
+            width: 200px;
+            padding: 2% 0;
+        }//end .headline
+
+        a{
+            color: @darkentang;
+        }//end a
+    }//end section
+}//end #header

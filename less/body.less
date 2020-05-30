@@ -1,0 +1,272 @@
+#slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid blue;
+    // padding: 3% 0;
+    width: 80%;
+    margin: auto;
+
+    @media @tablet{
+        width: 95%;
+    }//end @media @tablet
+
+    .one{
+        .sidebyside();
+        margin-top: 7%;
+        
+        p{
+            padding-right: 2%; 
+        }//end p
+    }//end .one
+
+    .two{
+        .sidebyside(row-reverse);
+        margin-bottom: 7%;
+
+        p{
+            padding-left: 2%;
+        }//end p
+    }//end .two
+
+    p{
+        font-family: 'Indie Flower', cursive;
+        line-height: 1.5;
+        font-size: 1.4rem;
+
+        @media @phone{
+            font-size: 1.1rem;
+            line-height: normal;
+        }
+    }//end p
+
+    img{
+        width: 40%;
+    }//end img
+
+    .phone{
+        @media @phone{
+            display: none;
+        }
+    }
+}//end #slogan
+
+//event index page
+#event{
+    .sidebyside(column);
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-top: 5%;
+    .pagebreaktop();
+    .pagebreak();
+
+    h2{
+        padding: 5% 0;
+        font-family: 'Concert One', cursive;
+        text-align: center;
+    }//end h2
+}//end #event
+
+
+//about page
+#main{
+    text-align: center;
+    padding: 5% 0;
+    .pagebreak();
+    font-family: 'Concert One', cursive;
+
+    section{
+        width: 80%;
+        margin: auto;
+        padding: 2% 0;
+
+        @media @tablet{
+            width: 95%;
+        }//end @media @tablet
+    }//end section
+
+    img{
+        width: 25%;
+
+        @media @phone{
+            width: 50%;
+        }
+    }//end img
+
+    h2{
+        padding-bottom: 5%;
+    }//end h2
+
+    h4{
+        padding-top: 2%;
+    }//end h4
+
+    p{
+        font-family: 'Indie Flower', cursive;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        width: 80%;
+        margin: auto;
+        padding-top: 2%;
+
+        @media @phone{
+            font-size: 1.1rem;
+            width: 100%;
+        }
+    }//end p
+
+    .elijah, .raneem, .shanon{
+        .sidebyside();
+
+        @media @phone{
+            .sidebyside(column);
+        }
+    }
+
+    .robert, .anthony{
+        .sidebyside(row-reverse);
+
+        @media @phone{
+            .sidebyside(column);
+        }
+    }
+
+    .elijah, .robert, .raneem, .anthony{
+        .pagebreak();
+    }
+
+    .elijah{
+        .pagebreaktop();
+    }
+}//end #main
+
+
+button, input[type=submit]{
+    width: 100px;
+    background-color: @eggplant;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}//end button
+
+
+//contact page
+#contact{
+    .sidebyside(column);
+    padding-top: 5%;
+    padding-bottom: 8%;
+    .pagebreak();
+    font-family: 'Concert One', cursive;
+
+    section{
+        width: 90%;
+        margin-top: 5%; 
+        .sidebyside();
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3% 1%;
+        background-color: @eggplant;
+        color: white;
+        border-radius: 8px;
+
+        @media @tablet{
+            .sidebyside(column);
+            width: 80%;
+        }//end @media @tablet
+
+        i{
+            font-size: 3rem;
+        }//end i
+
+        h4{
+            padding: 2% 0;
+        }//end h4
+
+        p{
+            font-family: 'Indie Flower', cursive;
+            line-height: 1.5;
+            font-size: 1.5rem;
+            padding-top: 2%;
+
+            @media @phone{
+                font-size: 1.1rem;
+                line-height: normal;
+            }
+        }//end p
+
+        div{
+            text-align: center;
+        }//end div
+
+        .phone{
+            i{
+                padding-bottom: 5%;
+            }//end i
+
+            h4{
+                padding-bottom: 5%;
+            }//end h4
+        }//end .phone
+
+        .phone, .email{
+            @media @tablet{
+                margin-top: 5%;
+            }
+        }
+    }//end section
+}//end #contact
+
+#form{
+    form{
+        display: flex;
+        flex-direction: column;
+    }//end form
+
+    .sidebyside(column);
+    padding: 5% 0;
+    .pagebreak();
+
+    h2{
+        padding-bottom: 3%;
+        font-family: 'Concert One', cursive;
+        text-align: center;
+    }//end h2
+
+    section{
+        width: 80%;
+        background-color: @apricot;
+        padding: 2% 1%;
+        border-radius: 10px;
+
+        @media @phone{
+            width: 95%;
+        }
+
+        input[type=text], textarea{
+            width: 100%;
+            padding: 1%;
+            border-radius: 8px;
+            margin-top: 1% 0;
+            resize: vertical;
+            border: none;
+        }//end input & textarea
+
+        textarea{
+            height: 200px;
+
+            @media @phone{
+                height: 100px;
+            }
+        }
+
+        label{
+            margin: 1% 0;
+        }//end label
+
+        input[type=submit]{
+            margin-top: 2%;
+            margin-left: 1%;
+        }//end input
+    }//end section
+}//end form
